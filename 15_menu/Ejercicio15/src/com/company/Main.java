@@ -41,29 +41,29 @@ public class Main {
 
                 case 'a':
                     r1 = a + b;
-                    r2 = (int) r1;
+                    r2 = a + b;
                     System.out.println("El resultado de sumar: " + a + " y " + b + " es: " + r2);
                     break;
                 case 'b':
-                    r1 = a - b;
-                    r2 = (int) r1;
+                    r1 = ;
+                    r2 = a - b;
                     System.out.println("El resultado de restar: " + a + " y " + b + " es: " + r2);
                     break;
 
                 case 'c':
-                    r1 = a * b;
-                    r2 = (int) r1;
+                    r1 = ;
+                    r2 = a * b;
                     System.out.println("El resultado de multiplicar: " + a + " y " + b + " es: " + r2);
                     break;
 
                 case 'd':
-                    r1 = (float) a / (float) b;
-                    System.out.println("El resultado de dividir: " + a + " y " + b + " es: " + r1);
+                    r2 = a /  b;
+                    System.out.println("El resultado de dividir: " + a + " y " + b + " es: " + r2);
                     break;
 
                 case 'e':
-                    r1 = a % b;
-                    r2 = (int) r1;
+                    r1 = ;
+                    r2 = a % b;
                     System.out.println("El resultado del resto de: " + a + " y " + b + " es: " + r2);
                     break;
 

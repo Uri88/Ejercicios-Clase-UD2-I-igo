@@ -18,27 +18,23 @@ public class Main {
         System.out.println("Elige 'P' para Par, o 'I' para Impar: ");
         char c = br.readLine().toLowerCase().charAt(0);
 
-        if (c == 'p') {
-
-            for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 50; i++) {
+            if (c == 'p') {
                 a = a + 2;
                 System.out.println(+a);
-            }
-
-
-        } else {
-
-            if (c == 'i') {
-
-                for (int i = 0; i < 50; i++) {
-                    b = b + 2;
-                    System.out.println(+b);
-                }
-
             } else {
 
-                System.out.println("ERROR. No has introducido 'P' o 'I'");
+                if (c == 'i') {
+
+                    b = b + 2;
+                    System.out.println(+b);
+
+                } else {
+
+                    System.out.println("ERROR. No has introducido 'P' o 'I'");
+                }
             }
+
         }
     }
 }

@@ -20,11 +20,11 @@ public class Main {
 
             if (a>0){
 
-                System.out.println(+a);
+                System.out.println(a);
 
             } else {
                 b = a * (-1);
-                System.out.println(+b);
+                System.out.println(b);
 
             }
         }while (a != 0) ;

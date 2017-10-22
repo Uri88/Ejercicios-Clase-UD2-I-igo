@@ -12,7 +12,7 @@ public class Main {
 
         double cantidad = 0;
         double precio = 0;
-        double cambio = 0;
+        int cambio = 0;
         int monedas = 0;
 
         //Precio Producto
@@ -25,7 +25,7 @@ public class Main {
             System.out.println("Introduce una cantidad: ");
             cantidad = Double.parseDouble(br.readLine());
 
-            if (cantidad < precio && cantidad % 5 != 0) {
+            if (cantidad < precio || cantidad % 5 != 0) {
 
                 System.out.println("La cantidad es menor que el importe del producto, o la moneda no es valida");
 
@@ -37,32 +37,32 @@ public class Main {
                     cambio = (cantidad - precio) * 100;
 
                     //Monedas de 2€
-                    monedas = (int) (cambio / 200);
+                    monedas = (cambio / 200);
                     System.out.println(+monedas+ " monedas de 2€");
                     cambio = cambio % 200;
 
                     //Monedas de 1€
-                    monedas = (int) (cambio / 100);
+                    monedas = (cambio / 100);
                     System.out.println(+monedas+ " monedas de 1€");
                     cambio = cambio % 100;
 
                     //Monedas de 0'50€
-                    monedas = (int) (cambio / 50);
+                    monedas = (cambio / 50);
                     System.out.println(+monedas+ " monedas de 0.50€");
                     cambio = cambio % 50;
 
                     //Monedas de 0'20€
-                    monedas = (int) (cambio / 20);
+                    monedas = (cambio / 20);
                     System.out.println(+monedas+ " monedas de 0.20€");
                     cambio = cambio % 20;
 
                     //Monedas de 0'10€
-                    monedas = (int) (cambio / 10);
+                    monedas = (cambio / 10);
                     System.out.println(+monedas+ " monedas de 0.10€");
                     cambio = cambio % 10;
 
                     //Monedas de 0'05€
-                    monedas = (int) (cambio / 5);
+                    monedas = (cambio / 5);
                     System.out.println(+monedas+ " monedas de 0.05€");
 
                 } else {
